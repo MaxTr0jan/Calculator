@@ -7,6 +7,9 @@ public class Main {
         System.out.println("Введите пример");
         String primer = scanner.nextLine();
         String[] chast = primer.split(" ");
+        if (chast.length>3) {
+            throw new Exception();
+        }
         int a = Integer.parseInt(chast[0]);
         char operation = chast[1].charAt(0);
         int b = Integer.parseInt(chast[2]);
